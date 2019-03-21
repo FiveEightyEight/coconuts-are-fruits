@@ -1,4 +1,5 @@
 const app = require('express')();
+const port =  process.env.PORT || 3699;
 
 app.get('/ping', (req, res) => {
     res.status(200).json({
@@ -19,6 +20,6 @@ app.use('*', (req, res) => {
     });
 });
 
-app.listen( process.env.PORT ||3699, _=> {
-    console.log(`Listening on Port: ${process.env.PORT || 3699}`)
+app.listen(port , _=> {
+    console.log(`Listening on Port: ${port}`)
 });
