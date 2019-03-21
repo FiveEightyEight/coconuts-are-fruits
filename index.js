@@ -19,6 +19,6 @@ app.use('*', (req, res) => {
     });
 });
 
-app.listen(3699, _=> {
-    console.log('Listening on Port: 3699')
+app.listen( process.env.PORT ||3699, _=> {
+    console.log(`Listening on Port: ${process.env.PORT || 3699}`)
 });
