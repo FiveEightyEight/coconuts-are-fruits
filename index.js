@@ -15,7 +15,7 @@ app.get('/coconut', (req, res) => {
 
 app.use('*', (req, res) => {
     res.status(404).json({
-        message: 'page not found, have some coconut',
+        message: 'page not found, have some coconuts',
         '🥥': '🥥🥥🥥🥥🥥🥥🥥🥥🥥🥥🥥🥥🥥🥥🥥'
     });
 });
